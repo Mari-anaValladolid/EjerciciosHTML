@@ -1,5 +1,8 @@
 <!--Aqui adentro va el cometario 1-->
 
+<!--Si escribimos  ! o html5, podemos crear la escritura basica de nuetro documento HTML 
+    gracias a las observaciones EMMET -->
+
 
 <!DOCTYPE html> <!--Con esto undicamos el tipo de comentario-->
 <html lang="en"> <!--Especificamos el Lenguaje de nuestro documento-->
@@ -27,7 +30,6 @@ Atributos globales: Son aquellos que se pueden aplicar a todos los elementos del
 -->
 
 
-
 <body>
 
     <!--Etiquetas de titulo o de cabecera de texto: h1, h2, h3, h4, h5, h6
@@ -35,11 +37,11 @@ Atributos globales: Son aquellos que se pueden aplicar a todos los elementos del
     Las etiquetas de cabecera de texto nos permiten crear un encabezado de texto, y estas etiquetas tienen atributos que nos permiten definir el tamanio, color, estilo, etc.-->
     
 
-    <h1>Titulo de nuestra pagina</h1> 
-    <h2>Introduccion</h2>
-    <h3>Tema 1</h3>
-    <h4>Subtema 1</h4>
-    <h5>Sub sub tema 1</Sub></h5>
+    <h1>Titulo Aprendiendo HTML sin morir en el intento</h1> 
+    <h2>Introduccion:Con la mejor actitud</h2>
+    <h3>Tema 1 Superando mi miedo al error</h3>
+    <h4>Subtema 1: prometo estudiar y practicar</h4>
+    <h5>Sub sub tema 1 ya no se que decir</Sub></h5>
     <h6>Sub sub sub tema 1</h6>
     
     <!-- Etiqueta <p>  para los parrafos. Nos sirve para agregar informacion estructurara a nuestro documentos. Tambien tienen atributos para modificar temario, color, estilo, ect., aunque no es una buena practica dotar de estilo a nuestros parrafos directamente desde el html.
@@ -48,9 +50,11 @@ Atributos globales: Son aquellos que se pueden aplicar a todos los elementos del
 <p aling="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maiores dignissimos est nemo animi corporis error tempore! Dolorem hic, ut consequuntur et iste expedita? Aut repellat quo distinctio eum ipsam?</p>
 
 <p aling="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maiores dignissimos est nemo animi corporis error tempore! Dolorem hic, ut consequuntur et iste expedita? Aut repellat quo distinctio eum ipsam?</p>
-
+<hr>
 
 <p aling="right" style="color: red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maiores dignissimos est nemo animi corporis error tempore! Dolorem hic, ut consequuntur et iste expedita? Aut repellat quo distinctio eum ipsam?</p>
+<br>
+<br>
 
 <!--Etiquetas para formatear texto: strong, em, u, i, b, blockquote
 
@@ -67,10 +71,207 @@ blockquote es para citas o bloques de texto
 
 -->
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maiores dignissimos <u>est nemo animi corporis</u>  error tempore! Dolorem hic, ut consequuntur et iste expedita? Aut repellat quo distinctio eum ipsam?</p>
+<!-- Esta es la forma de anidar etiquetas-->
+
+<p>
+    <b>
+        <u>
+
+        </u>
+    </b>
+</p>
+
+
+<blockquote><p><em><strong> dolor </strong></em>Loremsit amet consectetur adipisicing elit. Dolorem maiores dignissimos <b><u>est nemo animi corporis</u> </b> error tempore! Dolorem hic, ut <i>et iste expedita? Aut repellat quo distinctio </i>eum ipsam?</p></blockquote>
+
+
+<!--Etiquetas divisorias y separadores hr y br
+
+hr nos sirve para dar una separacion entre parrafos  (veremos una lienea horizontal que usaremos de separador. No necesita etiquetade cierre)
+
+<hr>
+
+br nos sirve para dar una separacion entre parrafos a manera de salto de linea, y al igual que la etiqueta hr no necesita de cierre.
+
+
+-->
+<!--
+      Etiquetas de enlace <a> <a/>
+
+Los enlaces nos permiten la navegacion por medio de hipervinculos o links que van a realizar la conexion y referencias otros archivoso paginas web dentro de la misma aplicacion o de manera externa.
+
+href: es el atributo  que nos permite definir la ubicacion de la pagina a la que nos vamos a enlazar. Este atributo puede ser una URL, o una ubicacion dentro de nuestra carpeta de assets. Pondremos dentro de las comillas la direccion de la pagina o recurso que queremos enlanzar.
+
+target: el atributo que nos permite definir la ventana de destino, que puede ser una nueva venyana o la misma.
+  -_blank: abre una nueva ventana
+  -_self: abrir en la misma ventana, este atributo por defecto. 
+-->
+<br>
+
+<a>Este es un enlace, como no tiene ninguna referencia, no hace nada</a>
+<br>
+<br>
+<a href="https://www.google.com" target="_blank">Visita la apagina de Google para buscar mas fotos de perritos playeros</a>
+<br>
+<br>
+<a href="assets/PerritoPlayero.jpg" target="_blank">Abre una bonita foto de un perrito playero</a>
+
+<!--Otros enlaces que nos pueden servir mas adelante
+
+    - enlaces de correo: Para vincular correos
+
+    mailto:felipe.maqueda@idr.edu.mx
+
+
+    - enlaces de descarga: Dentro del atributo href se puede colocar la direccion de la pagina o archivo que se va a descargar, y el atributo download que nos permite definir el nombre del archivo que se descargar
+-->
+<br>
+<br>
+<a href="mailto:felipe.maqueda@idr.edu.mx">Enviame un correo electronico</a>
+
+<a href="assets/perritoplayero.jpg" download>Descarga la foto del perrito playero</a>
+
+<br>
+<br>
+<a href="mailto:marianvj17@gmail.com"> Envia un correo electronico</a>
+
+<a href="assets/PerritoPlayero.jpg" download> Descarga foto de perrito playero</a>
+
+<!--
+
+    Etiquetas de listas ordenadas y listas de definiciones (ul, ol, dl)
+
+
+Las listas en HTML nos permite crear conjuntos de elementos en forma de lista dentro de una página. Estos elementos irán precedidos por un guión o número.
+
+    Los tipos de listas que tenemos en HTMl son:
+
+    - Listas ordenadas (ol): Son aquellas que nos muestran los elementos de la lista en orden. Para representar el orden, tendremos los elementos numeros, es decir, cada uno de los elementos irá precedido de un número o letra que establezca su orden. Las listas ordenadas se representan mediante la etiqueta ol.
+
+    Atibutos de listas ordenadas:
+
+        - start: para definir el orden inicial, por defecto es 1
+        - type: pra indicar el tipo de lista que se va a crear
+            - decimal para numeros enteros
+            - lower-alpha para letras minusculas (a)
+            - lower -roman para letras minusculas en romano
+            - upper-alpha para letras mayusculas (A)
+            - upper-roman para mayuscas en romano
+        - reversed: para invertir el orden de los elementos
+        - Listas desordenadas: Las listas desordenadas son aquellas que nos sirven para mostrar los elementos sin ningún tipo de orden, simplemente precedido por una viñeta que puede ser un punto, un cuadrado, etc.
+
+    Atributos de listas desordenadas:
+        - style para definir el estilo de la lista
+            - circle
+            - disc
+            - square
+
+
+    - Listas de definiciones: Son aquellas que nos sirven para montar listas en las que tenemos la estructura valor y definición. Suelen ser listas para definir términos, como si fuese un diccionario, si bien puede ser cualquier par valor-definicion.
+
+
+-->
+
+<h3> Esta es una lista ordenada de perritos sin atributos</h3>
+
+<ol> <!--Order de liste-->
+    <li>Dalmata</li> <!--List item-->
+    <i>Labrador</i>
+    <il>Chihuahua</il>
+    <il>Border Collie</il>
+</ol>
+
+<h3> Esta es una lista ordenada de perritos sin atributos</h3>
+
+<ol type="a" start="15"> 
+    <li>Dalmata</li> <!--List item-->
+    <i>Labrador</i>
+    <il>Chihuahua</il>
+    <il>Border Collie</il>
+</ol>
+
+<h3> Esta es una lista desordenada de perritos sin atributos</h3>
+
+<ul> 
+    <li>Dalmata</li> <!--List item-->
+    <i>Labrador</i>
+    <il>Chihuahua</il>
+    <il>Border Collie</il>
+</ul>
+
+<h3> Esta es una lista desordenada de perritos con atributos</h3>
+
+<ul type="square"> 
+    <li>Dalmata</li>
+    <i>Labrador</i>
+    <il>Chihuahua</il>
+    <il>Border Collie</il>
+</ul>
+
+
+<h3>Lista de definiciones</h3>
+
+<dl> <!--definition list-->
+    <dt>Gato</dt> <!--definition term!-->
+    <dd>Mamífero carnívoro de la familia de los Félidos, digitígrado, doméstico, de unos cinco decímetros de largo desde la cabeza hasta el arranque de la cola, que por sí sola mide dos decímetros aproximadamente. Pareciera que planean dominar al mundo</dd>
+    <dt>Perro</dt>
+    <dd>Mamífero doméstico de la familia de los cánidos, de tamaño, forma y pelaje muy diversos, según las razas, que tiene olfato muy fino y es inteligente y muy leal a su dueño. Es el mejor amigo del hombre</dd>
+</dl>
+
+
+<!-- 
+
+    Etiquetas de imagen (img)
+
+      La etiqueta img nos permite agregar una imagen en un documento web. Entre los formatos aceptados más populares para las imágenes son: jpeg, png, gif y webp.
+
+    Debemos tener en centa que el tamaño de la imagen influye en el proceso de carga de la página. Y por tanto se suelen preparar las imagnes para que su peso sea menor. https://tinypng.com/ 
+
+    Los atributos de la etiqueta img son:
+
+    - src: es el atributo que nos permite definir la ubicación de la imagen.
+    - alt: es el atributo que nos permite definir una descripción de la imagen.
+    - width: es el atributo que nos permite definir el ancho de la imagen.
+    - height: es el atributo que nos permite definir el alto de la imagen.
+
+-->
+
+<img src="/Assets/PerritoPlayero.jpg" height="500px" alt="Esta es una foto de un perrito playero"> 
+
+<br>
+<br>
+
+
+<!--Etiquetas de divisiones (di y span)
+
+     Las etiquetas div y span no tienen ningun signidicado especial, sólo que la etqueta div se define como un elemento bloque y la etiqueta span es un elemento de linea.
+
+    -div: Este es un bloque de texto, se utiliza pra agrupar elementos en una sola seccion, es decir, si queremos agrupar una imagen y un texto, debemos utilizar un div.
 
 
 
+-->
+
+<!--////////////////////////////////////////////////////////////-->
+<div align="center" style="color: blueviolet; font-size: larger; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
+    <img src="/Assets/img/PerritoPlayero.jpg" alt="Perrito Playero" width="200" height="200">
+    <p>Este texto donde vemos a un bonito perro playero. Este texto está dentro de un div, por lo que si le agregamos estilos directamente al div, podemos agregar colores, fuentes, etc.</p>
+    <p>Incluso podemos agregar listas a este div, y como te puedes dar cuenta, también se le agregan los estilos, por lo que los elementos de la lista también se centrarán de un color morado.</p>
+    <ul>
+        <li> Un elemento de lista centrado </li>
+        <li> Otro elemento de lista centrado </li>
+    </ul>
+    </div>
+<!--////////////////////////////////////////////////////////////-->
+    <div align="center" style="border: 10px dotted blue;">
+        <h3 >Ejemplo de div y span </h3>
+         <p>
+          Esto es un párrafo dentro de un div,
+           <span style="color: red;"> y esto un span dentro de un párrafo. </span>
+         </p>
+       </div>
+<!--////////////////////////////////////////////////////////////-->
+<!--Esto marca un boque de codigo -->
 
 
 </body>
